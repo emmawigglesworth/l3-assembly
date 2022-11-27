@@ -1,9 +1,9 @@
 import argparse
 import ast
-from visitors.GlobalVariables import GlobalVariableExtraction
-from visitors.TopLevelProgram import TopLevelProgram
-from generators.StaticMemoryAllocation import StaticMemoryAllocation
-from generators.EntryPoint import EntryPoint
+from assembly.visitors.GlobalVariables import GlobalVariableExtraction
+from assembly.visitors.TopLevelProgram import TopLevelProgram
+from assembly.generators.StaticMemoryAllocation import StaticMemoryAllocation
+from assembly.generators.EntryPoint import EntryPoint
 
 def main():
     input_file, print_ast = process_cli()
